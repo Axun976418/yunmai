@@ -82,7 +82,7 @@ a:hover {
 }
 
 section {
-  padding: 0px 0;
+  padding: 80px 0;
 }
 
 .heading {
@@ -486,7 +486,7 @@ section {
 *********Team CSS*********
 **************************/
 #team {
-  padding-top: 0;
+  padding: 80px 0px;
 }
 
 .team-members {
@@ -573,8 +573,7 @@ section {
 **************************/
 #features {
   text-align: center;
-  background-image: url(../images/features-bg.jpg);
-  padding: 110px 0;
+  background-image: url(../images/center-bj.jpg);
 }
 
 #features i {
@@ -603,6 +602,7 @@ section {
 .single-table {
   padding: 30px 20px 20px;
   border:1px solid #f2f2f2;
+  background: #f5f5f5;
 }
 
 .single-table h3 {
@@ -1214,7 +1214,12 @@ a:hover, a:focus {
 		right: 40%
 	}
 	#blog {
-		overflow: hidden;
+		text-align: center;
+  background-image: url(../images/features-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 	}
 	.entry-header h2 {
 		line-height: 20px;
@@ -1254,6 +1259,26 @@ a:hover, a:focus {
 		float: none;
 	}
 }
+#services{
+  padding:40px 0px 0px 0px;
+}
+#portfolio{
+  padding:80px 0px;
+}
+#pricing{
+  padding:80px 0px;
+}
+.col-a6{
+  margin-left: 400px;
+}
+#blog{
+  text-align: center;
+  background-image: url(../images/features-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 .back{
 	width: 45px;
 	height: 45px;
@@ -1269,7 +1294,7 @@ a:hover, a:focus {
 	color: #636369;
 	font-weight:bold;
 	line-height: 47px;
-	text-indent: 7px;
+	text-indent: 8px;
 	display: block;
 }
 .back:hover{
@@ -1278,3 +1303,46 @@ a:hover, a:focus {
 .back:hover a{
 	color: #fff;
 }
+.backe{
+      position: fixed;
+      width: 50px;
+      height: 150px;
+      right: 0px;
+      bottom: 130px;
+    }
+    .a2{
+      width: 100px;
+      height: 50px;
+      background: #028fcc;
+      position: absolute;
+      z-index:-1;
+      color: white;
+      font-weight: bolder;
+      text-align: center;
+      line-height: 50px;
+      transition: all 1s;
+    }
+    .a1,.top{
+      width: 50px;
+      height: 50px;
+      position: relative;
+      background: blue;
+      z-index:3;
+      margin-top: 2px;
+      }
+    .a3,.top-a{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background: #27282a;
+      z-index:3;
+    }
+    .a1:hover .a2{
+      transform: translateX(-100px);
+    }
+    .top:hover .top-a{
+      background:#028fcc;
+    }
+    .top-a:hover a{
+      color: red;
+    }

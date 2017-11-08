@@ -134,25 +134,8 @@ jQuery(function($) {
 		});
 	});
 
-		window.onload=function()
-	{
-	    var back = document.getElementById("back");
-	    window.onscroll = function()
-	    {
-	        var s = document.body.scrollTop || document.documentElement.scrollTop;
-	        if(s>200){
-				// 500 你的位置 与浏览器顶端的距离
-	        	back.style.display = "block";
-	        }
-	        else{
-				// 500 你的位置 与浏览器顶端的距离
-	        	back.style.display = "none";
-	        }
-	    }
-	}
-
 	//Google Map
-	/*var latitude = $('#google-map').data('latitude')
+	var latitude = $('#google-map').data('latitude')
 	var longitude = $('#google-map').data('longitude')
 	function initialize_map() {
 		var myLatlng = new google.maps.LatLng(latitude,longitude);
@@ -174,6 +157,21 @@ jQuery(function($) {
 			infowindow.open(map,marker);
 		});
 	}
-	google.maps.event.addDomListener(window, 'load', initialize_map);*/
-	
+	google.maps.event.addDomListener(window, 'load', initialize_map);
 });
+	window.onload=function()
+	{
+	    var backe = document.getElementById("backe");
+	    window.onscroll = function()
+	    {
+	        var s = document.body.scrollTop || document.documentElement.scrollTop;
+	        if(s>200){
+				// 500 你的位置 与浏览器顶端的距离
+	        	backe.style.display = "block";
+	        }
+	        else{
+				// 500 你的位置 与浏览器顶端的距离
+	        	backe.style.display = "none";
+	        }
+	    }
+	}
