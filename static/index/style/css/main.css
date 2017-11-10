@@ -1279,38 +1279,15 @@ a:hover, a:focus {
   background-position: center;
   background-attachment: fixed;
 }
-.back{
-	width: 45px;
-	height: 45px;
-	background:#27282A; 
-	position: fixed;
-	right: 30px;
-	bottom: 130px;
-	display:none;
-}
-.back>a{
-	text-decoration: none;
-	margin:0px 0px 0px 0px;
-	color: #636369;
-	font-weight:bold;
-	line-height: 47px;
-	text-indent: 8px;
-	display: block;
-}
-.back:hover{
-	background:#028fcc;
-}
-.back:hover a{
-	color: #fff;
-}
-.backe{
+.Sign{
       position: fixed;
       width: 50px;
       height: 150px;
       right: 0px;
-      bottom: 130px;
+      bottom: 100px;
+      display: none;
     }
-    .a2{
+    .sign-a,.erweima-a{
       width: 100px;
       height: 50px;
       background: #028fcc;
@@ -1322,27 +1299,60 @@ a:hover, a:focus {
       line-height: 50px;
       transition: all 1s;
     }
-    .a1,.top{
+    .sign-a>a{
+      color: white;
+    }
+    .erweima-a{
+        width: 0px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        transform: translate(-50px);
+    }
+    .top,.sign,.erweima{
       width: 50px;
       height: 50px;
       position: relative;
       background: blue;
       z-index:3;
-      margin-top: 2px;
+      margin-top: 0px;
       }
-    .a3,.top-a{
+    .sign-b,.erweima-b,.top-b{
       width: 50px;
       height: 50px;
       position: absolute;
-      background: #27282a;
-      z-index:3;
+      background: #3e3e3e;
+      z-index:3;   
     }
-    .a1:hover .a2{
+    .sign-b>a,.top-b>a{
+      display: block;
+      color:#727272;
+      width: 38px;
+      height: 40px;
+      margin: 10px 0px 0px 12px ;
+    }
+    .erweima-b>a{
+      display: block;
+      color:#727272;
+      width: 38px;
+      height: 40px;
+      margin: 12px 0px 0px 8px ;
+    }
+    .sign:hover .sign-a{
       transform: translateX(-100px);
     }
-    .top:hover .top-a{
-      background:#028fcc;
+    .sign:hover .sign-b{
+      background: #028fcc;
     }
-    .top-a:hover a{
-      color: red;
+    .erweima:hover .erweima-a{
+      width: 100px;
+    }
+    .erweima:hover .erweima-b{
+      background: #028fcc;
+    }
+    .top:hover .top-b{
+      background: #028fcc;
+    }
+    .top-b:hover a,.erweima-b:hover a,.sign:hover a{
+      color: #fff;
     }

@@ -161,17 +161,17 @@ jQuery(function($) {
 });
 	window.onload=function()
 	{
-	    var backe = document.getElementById("backe");
+	    var Sign = document.getElementById("Sign");
 	    window.onscroll = function()
 	    {
 	        var s = document.body.scrollTop || document.documentElement.scrollTop;
 	        if(s>200){
 				// 500 你的位置 与浏览器顶端的距离
-	        	backe.style.display = "block";
+	        	Sign.style.display = "block";
 	        }
 	        else{
 				// 500 你的位置 与浏览器顶端的距离
-	        	backe.style.display = "none";
+	        	Sign.style.display = "none";
 	        }
 	    }
 	}
